@@ -1,9 +1,7 @@
 //- Add 2 `<button>` and 1 `<ul>` element,
 // either in the HTML or through JavaScript
 let content = document.querySelector("#content");
-let buttonEl = document.createElement("button");
-buttonEl.innerText = "press me"; 
-content.appendChild(buttonEl);
+
 
 
 
@@ -26,5 +24,8 @@ buttonEl.addEventListener( "click", function(){
         let liEl = document.createElement("li");
         liEl.appendChild(img);
         ulEl.appendChild(liEl);
+        let buttonEl = document.createElement("button");
+buttonEl.innerText = "press me"; 
+content.appendChild(buttonEl);
     })
 })
